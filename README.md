@@ -8,6 +8,7 @@
 
 - [Таблица посещаемости гр. в0813][v0813]
 - [Таблица посещаемости гр. в0817][v0817]
+- [Логины для терминал-классов][logins_all]
 
   - Литература
     - Подбельский В., Фомин С.С. [Курс программирования на языке Си: учебник][book-c]
@@ -15,8 +16,9 @@
 
 <!-- LINKS -->
 
+[logins_all]: https://docs.google.com/document/d/1mGhOBYHmx6RH0xuTSQAKmGtvybLS3hD3iZIebJZRDKg/edit?usp=sharing
 [v0813]:            https://docs.google.com/spreadsheets/d/1vcIQ29ttj_eGTWHqQYhNxe8QyewYWcxn4vaBh2pwDH0/edit?usp=sharing
-[v0817]:            https://docs.google.com/spreadsheets/d/11sysyH5Ye0Xh3KA1sCUSxj-0CrRVwHm1NbugQKUYkwc/edit?usp=sharing
+[v0817]:            https://docs.google.com/spreadsheets/d/1Z4uRfTRkGcMPaQimwMfJDNoLV51xavKVKykn_4hoZL4/edit?usp=sharing
 
 [cc3]:              http://creativecommons.org/licenses/by-sa/3.0/
 [book-c]:       https://www.books.ru/books/kurs-programmirovaniya-na-yazyke-si-uchebnik-1822708/?show=1
