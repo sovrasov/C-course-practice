@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+enum algoType {BOGO = 1, BOZO = 2};
+
 void printIntArray(const int* array, int size)
 {
   int i;
@@ -38,10 +40,28 @@ void bogosort(int* array, int size)
     shuffleArray(array, size);
 }
 
+void swapRandomElements(int* array, int size)
+{
+  int i, j, tmp;
+
+  i = rand() % size;
+  j = rand() % size;
+
+  tmp = array[i];
+  array[i] = array[j];
+  array[j] = tmp;
+}
+
+void bozosort(int* array, int size)
+{
+  while(!checkIsOrdered(array, size))
+    swapRandomElements(array, size);
+}
+
 void main()
 {
   int array[20];
-  int maxSize, size, i;
+  int maxSize, size, i, algo;
 
   maxSize = sizeof(array) / sizeof(int);
 
@@ -54,6 +74,15 @@ void main()
     return;
   }
 
+  printf("Select the slgorithm: %i-bogosort, %i-bozosort:", BOGO, BOZO);
+  scanf("%i", &algo);
+
+  if(algo != BOGO && algo != BOZO)
+  {
+    printf("Incorrect algorithm type input\n");
+    return;
+  }
+
   srand(time(NULL));
   for(i = 0; i < size; i++)
     array[i] = rand() % 1000;
@@ -61,7 +90,15 @@ void main()
   printf("Unsorted array:\n");
   printIntArray(array, size);
 
-  bogosort(array, size);
+  switch(algo)
+  {
+    case BOGO:
+      bogosort(array, size);
+      break;
+    case BOZO:
+      bozosort(array, size);
+      break;
+  }
 
   printf("Sorted array:\n");
   printIntArray(array, size);
