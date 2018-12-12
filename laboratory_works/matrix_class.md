@@ -85,7 +85,7 @@ Mat x = solve(A, b);
 double r = (A*x - b).norm(); //норма невязки должны быть небольшой, < 0.001
 std::cout << "Residual norm = " << r << '\n';
 ```
-Каждый отдельный тестовый сценарий можно оформить в виде юнит-теста.
+Каждый отдельный тестовый сценарий можно оформить в виде [юнит-теста](http://xp.1024.info/Articles/LoveUT.html).
 Простейшую реализацию юнит-тестов см. [здесь](https://gist.github.com/sovrasov/3df3cc271d1c87519606fde90eb3eac0).
 Пример её использования:
 ```c++
@@ -104,6 +104,7 @@ int main() {
     ASSERT_TRUE(r < 0.001);
   },
   "solve_system");
+  //tests.addTest([]() ... and so on
 
   tests.run();
 
