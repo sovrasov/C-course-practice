@@ -13,7 +13,8 @@
   - [Осенний семестр](laboratory_works/fall/README.md)
   - [Весенрий семестр](laboratory_works/spring/list_vector.md)
   - [Третий семестр](laboratory_works/matrix_class.md)
-  - [Четвёртый семестр](laboratory_works/bitfield_sieve.md)
+  - [Четвёртый семестр ч.1](laboratory_works/bitfield_sieve.md)
+  - [Четвёртый семестр ч.2](laboratory_works/convex_hull.md)
 - Литература
   - Подбельский В., Фомин С.С. [Курс программирования на языке Си: учебник][book-c]
   - А. Шень [Программирование. Теоремы и задачи][book-tasks]
